@@ -1,43 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-/* * {
-  margin: 0;
-  padding: 0;
+* {
+  margin: 5px;
+  padding: 5px;
   box-sizing: border-box;
-} */
+  color: #fff;
+}
 
 body {
-  /* padding: 1rem; */
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  background: #ccc;
-  color: #fff;
+  font-size: 18pt;
+  margin: 0;
+  padding: 0;
+  background: aliceblue;
+}
+
+.border {
+  border: solid 10px rebeccapurple;
 }
 
 .parent {
   display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  flex-direction: column;
-  min-height: 300px;
-}
 
-.border {
-  border: solid 10px indigo;
-  /* padding: 0 5px; */
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+
+  min-height: 500px;
 }
 
 .child {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
-
-  margin: 5px 5px;
-  padding: 5px;
 }
 
 .oldest {
-  background: darkcyan;
+  background: cadetblue;
+  align-self: stretch;
 }
 
 .peace {
